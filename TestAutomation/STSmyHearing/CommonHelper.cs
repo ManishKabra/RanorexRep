@@ -59,9 +59,9 @@ namespace STSmyHearing
 		public void ValidateActionBarTitle(string title)
 		{
 			if(KeywordImplementation.UIObject(By.Id("action_bar_title"),TimeSpan.FromSeconds(5)).Text.Equals(title))
-						Logger.logSuccess(title+" has found");
+				Logger.logSuccess(title+" has found");
 			else
-						Logger.logFailure(title+" has not found");
+				Logger.logFailure(title+" has not found");
 		}
 		
 		public void ValidateContents(string contents)
